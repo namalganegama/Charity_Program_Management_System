@@ -103,23 +103,18 @@ const BeneDashboard = ({ firstName, lastName, nic, _id, email, address, phone })
 
     }
 
-    const handleSearchArea = (e) =>{
-        const searchKey = (e.currentTarget.value);
+    // const handleSearchArea = (e) =>{
+    //     const searchKey = (e.currentTarget.value);
 
        
-            dispatch(getBeneficiaries());
-            if(res.data.success){
-           filterData(res.data.existingPosts,searchKey);
-        }
+    //         dispatch(getBeneficiaries());
+    //         if(res.data.success){
+    //        filterData(res.data.existingPosts,searchKey);
+    //     }
         
-        //filterData(res.data.existingPosts,searchKey)
-
+    //     //filterData(res.data.existingPosts,searchKey)
     
-
-    
-
-    
-    }
+    // }
 
 
 
@@ -139,13 +134,13 @@ const BeneDashboard = ({ firstName, lastName, nic, _id, email, address, phone })
                     </div>
                     <div className="col-3 col-md-3 col-sm-3 col-3">
                         <form className='d-flex input-group w-auto' >
-                            <input
+                            {/* <input
                                 className="form-control"
                                 type="search"
                                 placeholder="Search"
                                 name="searchQuery"
                                 onChange = {handleSearchArea}
-                            />
+                            /> */}
                             <div data-testid="test-1" style={{marginTop:"5px", marginLeft: "5px"}}>
                             <MDBIcon fas icon='search'/>
                             </div>
